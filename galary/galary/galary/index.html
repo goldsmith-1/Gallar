@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mini Pinterest Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div class="logo">MIVA Gallery</div>
+      <!-- Commented out because the pages are not available -->
+      <!-- <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#">About</a></li>
+      </ul> -->
+    </nav>
+
+    <header>
+      <h1>Discover Art and Inspiration</h1>
+      <h2>Your Daily Dose of Creativity</h2>
+    </header>
+
+    <!-- Pinterest Gallery -->
+    <div class="pinterest-gallery">
+      <div class="gallery-item">
+        <img src="pics/real/🌺🌺🌺.jpeg" alt="Image 1" />
+        <div class="desc">Beautiful Landscape</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="pics/real/Dawn's Reflection Serene Mountain Lake at Sunrise.jpeg"
+          alt="Image 2"
+        />
+        <div class="desc">Serenity at the Lake</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="pics/real/29 Amazing Places To Visit On an Iceland Vacation Fun Life Crisis.jpeg"
+          alt="Image 3"
+        />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="pics/real/Alpine Adventure Camping in the Mountains.jpeg"
+          alt="Image 3"
+        />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="pics/real/Alpine Idyll Camping Retreats in the Mountains.jpeg"
+          alt="Image 3"
+        />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pics/real/Salewa® USA.jpeg" alt="Image 3" />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="pics/real/High Tatra Mountains National Park In Slovakia.jpeg"
+          alt="Image 3"
+        />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="pics/real/Hiking in the Rocky Mountains, USA.jpeg"
+          alt="Image 3"
+        />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <div class="gallery-item">
+        <img src="pics/real/I5R2r3aY.jpeg" alt="Image 3" />
+        <div class="desc">Mountain Adventure</div>
+      </div>
+      <!-- Add more items as needed -->
+    </div>
+
+    <footer>
+      <p>© 2024 MIVA Gallery | Designed for School Project</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+      window.onscroll = function () {
+        const nav = document.querySelector("nav");
+        if (window.pageYOffset > 100) {
+          nav.style.padding = "10px 30px";
+        } else {
+          nav.style.padding = "15px 30px";
+        }
+      };
+    </script>
+
+    <!-- This script and lik is use to import medium-zoom package and styles to enable zoom effects -->
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/medium-zoom.min.js"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/medium-zoom@1.1.0/dist/style.min.css"
+      rel="stylesheet"
+    />
+
+    <script>
+      mediumZoom(document.querySelectorAll(".gallery-item img"));
+    </script>
+  </body>
+</html>
